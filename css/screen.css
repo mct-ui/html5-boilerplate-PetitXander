@@ -11,7 +11,9 @@ html {
   color: #111;
   padding: 24px 24px 0;
   background: white;
+  scroll-behavior: smooth;
 }
+
 
 /*
  * Remove text-shadow in selection highlight:
@@ -179,3 +181,22 @@ a:active {
 
 }
 
+/* Om de table over de volledige breedte te laten lopen kunnen we de width op 100% zetten.
+Tables hebben standaard tussen de cellen witruimte. We gaan die afzetten door border-spacing op 0 te zetten. */
+table {
+    width: 100%;
+    border-spacing: 0;
+}
+/* De tekst in th's staat standaard gecentreerd. We gaan die links uitlijnen door text-align op left te zetten. */
+th {
+    text-align: left;
+}
+/* th's en td's gaan we 4px padding boven en onderaan geven en 8px padding links en rechts. En een border-bottom van 1px. */
+td {
+    padding: 4px 8px;
+    border-bottom: 1px solid gainsboro;
+}
+
+.odd {
+    background-color: whitesmoke;
+}
