@@ -118,16 +118,20 @@ hr {
     height: 1px;
     background: lightgray;
     margin: 0 0 24px;
-    
+
 }
 
 a {
+    color: royalblue;
+    transition: all .1s ease-in-out;
 }
 
 a:hover,
 a:focus {
+    color: blueviolet;
 }
 
 a:visited,
 a:active {
+    color: crimson;
 }
